@@ -7,3 +7,22 @@ This file includes functions to trigger animations on scroll events. It contains
 
 ### ScrollAnimate.css
 This file contains a set of CSS animations used in conjunction with ScrollAnimate.js to create scroll-triggered animations. Various animation types such as fading in, sliding, and scaling up are available for use. Apply these animations to your HTML elements using corresponding data-animation attributes to enhance your website's visual appeal with scroll-based animations.
+
+## Functions in ScrollAnimate.js
+### isInViewport(element, offset)
+Purpose: Checks if an element is within the visible area of the viewport.
+Example: Ensures that an element becomes visible only when it enters the viewport by adjusting the offset value.
+
+### animateOnScroll()
+Purpose: Initiates animations for elements based on their visibility in the viewport during a scroll event.
+Example: Triggers the specified animations (fadeIn, scaleUp, etc.) for elements marked with data-animated-item as they come into view while scrolling.
+
+## Examples
+**Example 1: Fading In**
+```
+<div data-animated-section>
+  <h1 data-animated-item data-animation="fadeIn" data-duration="0.8s" data-delay="0.0s" data-easing="ease-in-out">
+      ScrollAnimate.js
+  </h1>
+</div>
+```
